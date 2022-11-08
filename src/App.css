@@ -1,0 +1,283 @@
+.main {
+  margin-top: 5%;
+}
+
+.card {
+  margin: auto;
+  display: block;
+  height: 60vh;
+  width: 40%;
+  text-align: center;
+}
+
+body {
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-image: url('https://img.freepik.com/free-vector/musical-colorful-notes-dark-background_1017-32302.jpg?w=1060&t=st=1667562423~exp=1667563023~hmac=fe9a5ce441ae8d3e7b07d2f40a962977558492a9082a712e3ebcc9987e083c04');
+}
+
+.inner_card {
+  height: auto;
+}
+
+img {
+  transition: 0.3s linear all;
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+}
+
+svg {
+  font-size: 25px;
+}
+
+.marquee {
+  margin: 5%;
+  color: white;
+}
+
+.btn_div {
+  margin: auto;
+  width: 300px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 70px;
+  background: rgba(59, 173, 227, 1);
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgba(152, 68, 183, 1) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+audio::-webkit-media-controls-panel {
+  background: rgba(59, 173, 227, 1);
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgba(152, 68, 183, 1) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+audio::-webkit-media-controls-play-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-timeline {
+  color: yellow !important;
+}
+
+button {
+  cursor: pointer;
+  margin: 3.6%;
+  width: 18%;
+  padding: 5px;
+  background: transparent;
+  border: none;
+}
+
+.start_div {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.start {
+  height: 640px;
+  width: 100%;
+  border-radius: 0% !important;
+}
+
+.playing {
+  margin-left: 50%;
+  top: 50%;
+  left: 50%;
+  margin-top: 20%;
+  width: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.d {
+  margin-left: 50%;
+  top: 50%;
+  left: 50%;
+  margin-top: 12.5%;
+  width: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.now.playing .bar {
+  display: inline-block;
+  position: relative;
+  margin-right: 3px;
+  width: 10px;
+  height: 1px;
+  overflow: hidden;
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgb(172, 76, 207) 51%, rgba(255, 53, 127, 1) 100%);
+  color: transparent;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.br {
+  display: inline-block;
+  position: relative;
+  margin-right: 3px;
+  width: 10px;
+  overflow: hidden;
+  color: transparent;
+}
+
+.a1 {
+  height: 30px;
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgb(172, 76, 207) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+.a2 {
+  height: 55px;
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgb(172, 76, 207) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+.a3 {
+  height: 35px;
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgb(172, 76, 207) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+.a7 {
+  height: 5px;
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgb(172, 76, 207) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+.a4 {
+  height: 30px;
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgb(172, 76, 207) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+.a5 {
+  height: 30px;
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgb(172, 76, 207) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+.a6 {
+  height: 15px;
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgb(172, 76, 207) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+.a8 {
+  height: 45px;
+  background: linear-gradient(45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgb(172, 76, 207) 51%, rgba(255, 53, 127, 1) 100%);
+}
+
+.paused.playing .bar {
+  animation-iteration-count: 1;
+}
+
+.paused.playing:after {
+  content: "Paused (Lame)"
+}
+
+.n1 {
+  animation-delay: 0.5s;
+}
+
+.n2 {
+  animation-delay: 0.2s;
+}
+
+.n3 {
+  animation-delay: 1.2s;
+}
+
+.n4 {
+  animation-delay: 0.9s;
+}
+
+.n5 {
+  animation-delay: 0.3s;
+}
+
+.n6 {
+  animation-delay: 03s;
+}
+
+.n7 {
+  animation-delay: 0.1s;
+}
+
+.n8 {
+  animation-delay: 0.9s;
+}
+
+@keyframes pulse {
+  0% {
+    height: 1px;
+    margin-top: 0;
+  }
+
+  10% {
+    height: 40px;
+    margin-top: -40px;
+  }
+
+  50% {
+    height: 20px;
+    margin-top: -20px;
+  }
+
+  60% {
+    height: 30px;
+    margin-top: -30px;
+  }
+
+  80% {
+    height: 60px;
+    margin-top: -60px;
+  }
+
+  100% {
+    height: 1px;
+    margin-top: 0;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .img {
+    animation: App-logo-spin infinite 6s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width:500px) {
+  img {
+    margin-top: 20%;
+    height: 140px;
+    width: 140px;
+  }
+
+  .marquee {
+    width: 100%;
+    margin: 12% auto;
+  }
+
+  .playing {
+    margin-top: 48%;
+  }
+
+  .main_body {
+    margin-left: -53%;
+  }
+
+  .d {
+    margin-bottom: -37.8px;
+  }
+}
